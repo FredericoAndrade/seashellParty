@@ -3,19 +3,32 @@
     <meta charset="utf-8">
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sprites.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/interaction.js"></script>
   </head>
 
   <body>
       <nav>
-        <h1>Greenpeace</h1>
+        <h1><a href="">Greenpeace</a></h1>
         <a href="#" class="profile"></a>
+        <ul>
+          <li><a href="#">Goals</a></li>
+          <li><a href="#">Tools</a></li>
+          <li><a href="#">People</a></li>
+          <li><a href="#">Reporting</a></li>
+        </ul>
       </nav>
-      <div class="leftBar"></div>
+
+      <div class="leftBar">
+
+      </div>
       <div class="content">
         <ul>
-          <li><input type="text" placeholder="Campaign Name"></li>
+          <li><input type="text" class="progressItem" placeholder="Campaign Name"></li>
           <li>
-            <ul id="tool">
+            <ul id="tool" class="progressItem">
               <li><a href="#" class="phone"></a></li>
               <li><a href="#" class="mail"></a></li>
               <li><a href="#" class="friend"></a></li>
@@ -23,35 +36,218 @@
           </li>
           <li id="progress">
             <div></div>
-            <a href="">Launch</a>
+            <a href="#" id="launch">Launch</a>
           </li>
-          <li><p>Target Universe</p>
+          <li class="progressItem universe"><p>Target Universe</p>
             <ul class="hovers">
-              <li><a href="#" class="upload"></a></li>
-              <li><a href="#" class="edit"></a></li>
-              <li><a href="#" class="share"></a></li>
+              <li><a href="#" class="link"></a></li>
+              <li><a href="#" class="edit clear"></a></li>
+              <li><a href="#" class="share clear"></a></li>
             </ul>
           </li>
+          <li id="targetUniverse">
+            <table>
+              <tr>
+                <th>
+                  <p>Name</p>
+                </th>
+                <th>
+                  <p>Data 1</p>
+                </th>
+                <th>
+                  <p>Data 2</p>
+                </th>
+                <th>
+                  <p>Data 3</p>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <p>Miriam</p>
+                </td>
+                <td>
+                  <p>Datum 1A</p>
+                </td>
+                <td>
+                  <p>Datum 2A</p>
+                </td>
+                <td>
+                  <p>Datum 3A</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Robert</p>
+                </td>
+                <td>
+                  <p>Datum 1B</p>
+                </td>
+                <td>
+                  <p>Datum 2B</p>
+                </td>
+                <td>
+                  <p>Datum 3B</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Emma</p>
+                </td>
+                <td>
+                  <p>Datum 1C</p>
+                </td>
+                <td>
+                  <p>Datum 2C</p>
+                </td>
+                <td>
+                  <p>Datum 3C</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Clive</p>
+                </td>
+                <td>
+                  <p>Datum 1D</p>
+                </td>
+                <td>
+                  <p>Datum 2D</p>
+                </td>
+                <td>
+                  <p>Datum 3D</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Natalia</p>
+                </td>
+                <td>
+                  <p>Datum 1E</p>
+                </td>
+                <td>
+                  <p>Datum 2E</p>
+                </td>
+                <td>
+                  <p>Datum 3E</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Stephanie</p>
+                </td>
+                <td>
+                  <p>Datum 1F</p>
+                </td>
+                <td>
+                  <p>Datum 2F</p>
+                </td>
+                <td>
+                  <p>Datum 3F</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Lara</p>
+                </td>
+                <td>
+                  <p>Datum 1G</p>
+                </td>
+                <td>
+                  <p>Datum 2G</p>
+                </td>
+                <td>
+                  <p>Datum 3G</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Paul</p>
+                </td>
+                <td>
+                  <p>Datum 1H</p>
+                </td>
+                <td>
+                  <p>Datum 2H</p>
+                </td>
+                <td>
+                  <p>Datum 3H</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>John</p>
+                </td>
+                <td>
+                  <p>Datum 1I</p>
+                </td>
+                <td>
+                  <p>Datum 2I</p>
+                </td>
+                <td>
+                  <p>Datum 3I</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Frank</p>
+                </td>
+                <td>
+                  <p>Datum 1J</p>
+                </td>
+                <td>
+                  <p>Datum 2J</p>
+                </td>
+                <td>
+                  <p>Datum 3J</p>
+                </td>
+              </tr>
+            </table>
+          </li>
+
           <li id="templates"><p>Templates</p>
             <ul>
-              <li><p>Landing Page</p>
+              <li class="progressItem landing"><p>Landing Page</p>
                 <ul class="hovers">
-                  <li><a href="#" class="upload"></a></li>
                   <li><a href="#" class="edit"></a></li>
-                  <li><a href="#" class="share"></a></li>
+                  <li><a href="#" class="link"></a></li>
+                  <li><a href="#" class="share clear"></a></li>
                 </ul>
               </li>
-              <li><p>Call Script</p>
+              <li id="landingPage">
+                <div>
+                  <input type="text" placeholder="Headline" class="h1">
+                  <input type="text" placeholder="Sub-header" class="h2">
+                  <textarea rows="10" cols="50" class="h3">Description</textarea>
+                  <a href="#">Login</a>
+                </div>
+                <a href="#">Upload Image</a>
+              </li>
+              <li class="progressItem script"><p>Call Script</p>
                 <ul class="hovers">
-                  <li><a href="#" class="upload"></a></li>
                   <li><a href="#" class="edit"></a></li>
-                  <li><a href="#" class="share"></a></li>
+                  <li><a href="#" class="link"></a></li>
+                  <li><a href="#" class="share clear"></a></li>
                 </ul>
+            </li>
+            <li id="script">
+              <div>
+                <p>Note: This is the script your volunteers will be using when making calls to prospects.</p>
+                <input type="text" class="question" placeholder="+ script question" value="Question: Hello there, is this {Prospect's name}?">
+                <input type="text" class="question" placeholder="+ script question" value="Question: Is now a good time to talk?">
+                <input type="text" class="question" placeholder="+ script question">
+              </div>
             </li>
             </ul>
           </li>
         </ul>
       </div>
+      <div class="linkModal modal"><a href="#" class="closeModal">x</a><p>You have no lists to choose from. Upload one now. </p> <a href="#" class="upload"></a></div>
+      <div class="landingModal modal"><a href="#" class="closeModal">x</a><p>You have no landing pages to choose from. Create one now.</p> <a href="#" class="edit"></a></div>
+      <div class="scriptModal modal"><a href="#" class="closeModal">x</a><p>You have no scripts to choose from. Create one now.</p> <a href="#" class="edit"></a></div>
+       <div class="missingModal modal"><a href="#" class="closeModal">x</a><p>Please complete all fields.</p></div>
+       <div class="launchModal modal"><a href="#" class="closeModal">x</a><p>Success!</p><a href="#" class="link"></a><p>http://am.us/grpC019D120413</p></div>
+
+      <footer></footer>
   </body>
 </html>
 
