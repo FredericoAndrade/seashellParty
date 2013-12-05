@@ -1,0 +1,22 @@
+.leftBar>ul{
+  width:100%;
+  list-style-type: none;
+  padding:0;
+  margin:0;
+}
+.leftBar>ul>li{
+  overflow: auto;
+}
+.leftBar>ul>li>a{
+  padding:20px;
+}
+.leftBar>ul>li>input{
+  width: 100%;
+  height: auto;
+}
+.leftBar>ul>li:hover{
+  background-color: #eaeaea;
+}
+.leftBar>ul>li>ul{
+  display: none;
+}
