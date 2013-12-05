@@ -1,0 +1,92 @@
+.phone, .mail, .friend, .upload, .edit, .share, .link{
+  height:48px;
+  width: 48px;
+  float: left;
+  border-radius: 3px;
+}
+.phone:hover, .mail:hover, .friend:hover, .upload:hover, .edit:hover, .share:hover, .link:hover{
+  background-color:#eaeaea;
+}
+.phone{
+background-image:url("../images/sprite.png") ;
+  background-position:0px 0px;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.mail{
+background-image:url("../images/sprite.png") ;
+  background-position:-50px 0px;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.friend{
+background-image:url("../images/sprite.png") ;
+  background-position:-100px 0px;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.upload{
+background-image:url("../images/sprite.png") ;
+  background-position:0px -50px;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.edit{
+background-image:url("../images/sprite.png") ;
+  background-position:-50px -51px;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.share{
+background-image:url("../images/sprite.png") ;
+  background-position:-100px -50px;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.link{
+background-image:url("../images/sprite.png") ;
+  background-position:-50px -200px;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.phone:hover, .phoneHover{
+background-image:url("../images/sprite.png") ;
+  background-position:0px -100px;
+  background-repeat:no-repeat;
+}
+.mail:hover{
+background-image:url("../images/sprite.png") ;
+  background-position:-50px -100px;
+  background-repeat:no-repeat;
+}
+.friend:hover{
+background-image:url("../images/sprite.png") ;
+  background-position:-100px -100px;
+  background-repeat:no-repeat;
+}
+.upload:hover{
+background-image:url("../images/sprite.png") ;
+  background-position:0px -150px;
+  background-repeat:no-repeat;
+}
+.edit:hover{
+background-image:url("../images/sprite.png") ;
+  background-position:-50px -151px;
+  background-repeat:no-repeat;
+}
+.share:hover{
+background-image:url("../images/sprite.png") ;
+  background-position:-100px -150px;
+  background-repeat:no-repeat;
+}
+.link:hover{
+background-image:url("../images/sprite.png") ;
+  background-position:-100px -200px;
+  background-repeat:no-repeat;
+}
+.clear, .clear:hover{
+  background:none;
+}
+.share, .share:hover{
+  display: none;
+}
