@@ -1,5 +1,6 @@
 html, body{
   height:100%;
+  clear:both;
 }
 body{
   margin:0;
@@ -7,6 +8,7 @@ body{
   font-weight: 300;
   font-size: 1.5em;
   padding-bottom:50px;
+  background:#222;
 }
 div{
   box-sizing:border-box;
@@ -16,86 +18,73 @@ a{
   color:black;
 }
 a:hover{
-  color:#222EFF;
+  color:#444;
 }
 input:focus::-webkit-input-placeholder
 {
     color: transparent;
 }
-nav{
-  overflow: auto;
-  border-bottom:1px solid #000;
-}
-nav h1{
-  float:left;
-  margin: 0;
-  font-weight: inherit;
-  padding: 10px;
-}
-nav>a{
-  height: 50px;
-  width: 50px;
-  margin:7px;
-  float:right;
-  background-image: url("../images/sprite.png");
-  background-position: 0 -200px;
-  background-repeat: no-repeat;
-}
-nav ul{
-  list-style-type:none;
-  overflow: auto;
-  float: left;
-  padding:0;
-  margin:0 0 0 50px;
-}
-nav ul li{
-  float:left;
-}
-nav ul li a{
-  float: left;
-  padding:18px 30px 18px 30px;
-  margin:0;
-}
-nav ul li a:hover, nav ul li:first-of-type a{
-  color:#222EFF;
-  background:#eaeaea;
-}
-.leftBar{
-  float:left;
-  /*display: none;*/
-  width: 20%;
-  border-right: 1px solid #000;
-  height: 100%;
+ul{
+  list-style-type: none;
 }
 .content{
+  background: #eee;
+  display: none;
+  border-left: 1px solid #bbb;
   float: right;
   width: 80%;
   height: inherit;
-  padding:20px 50px;
-  overflow: auto;
+  clear:right;
+  padding-bottom:90px;
 }
-.content ul{
-  list-style-type:none;
+.content>ul{
   padding: 10px;
-  margin:0;
+  margin: 0;
+  overflow: auto;
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
 }
 .content>ul>li{
+  background:white;
   min-height: 2em;
   margin-top:10px;
   margin-bottom:10px;
   display: block;
   clear: both;
   border:1px solid #eaeaea;
+  border-radius: 3px
+}
+.content>ul>li.tip{
+background: transparent;
+min-height: inherit;
+margin-top: 20px;
+margin-bottom: 0;
+display: block;
+clear: both;
+border: 1px solid transparent;
+border-radius: 3px;
+padding-left: 20px;
+}
+.content ul li#templates{
+  /*height:2em;*/
 }
 .content ul li#templates>ul>li.progressItem{
   display: block;
+  background: white;
   clear: both;
   border:1px solid #eaeaea;
+  border-top:none;
   min-height: 2em;
   padding-left:30px;
 }
-.content ul li#templates{
-  height:2em;
+.content ul li#templates>ul>li.tip{
+  display: none;
+  background: white;
+  clear: both;
+  border:1px solid #eaeaea;
+  border-top:none;
+  padding:10px 10px 10px 60px;
 }
 .content ul li#templates p span{
   margin-left:10px;
@@ -104,22 +93,18 @@ nav ul li a:hover, nav ul li:first-of-type a{
   top: -2px;
   color:#ddd;
 }
-/*.content ul li#templates:hover p span{
-  color:#aaa;
-  transition:all 150ms ease;
-}*/
 .content ul li#templates>ul{
   padding: 0;
   margin-top:15px;
   clear: both;
   overflow: auto;
+  border-top:1px solid #eaeaea;
 }
 .content ul li#templates>ul>li>ul>li>a{
   display: none;
-  /*padding:10px 0 0 10px;*/
-  /*height:auto;*/
 }
 .content ul li#templates>ul>li:hover>ul>li>a{
+  overflow: auto;
   display: block;
 }
 .content ul li p{
@@ -148,25 +133,7 @@ nav ul li a:hover, nav ul li:first-of-type a{
   float:left;
   width:48px;
 }
-.content ul li#progress {
-  width: 100%;
-  overflow: auto;
-  background-color: #eaeaea;
-}
 
-.content ul li#progress > a{
-  float: right;
-  background: white;
-  text-decoration: none;
-  color:black;
-  width: 10%;
-  padding:10px 0 11px 0;
-  text-align: center;
-}
-.content ul li input:hover, .content ul li#progress > a:hover{
-  background-color: #eaeaea;
-  color:#1A26FF;
-}
 ::-webkit-input-placeholder:hover { /* WebKit browsers */
     color:    #1A26FF;
 }
@@ -178,12 +145,6 @@ nav ul li a:hover, nav ul li:first-of-type a{
 }
 :-ms-input-placeholder:hover { /* Internet Explorer 10+ */
     color:    #1A26FF;
-}
-.content ul li#progress > div {
-   background-color: #aaa;
-   //width: 10%; /* Adjust with JavaScript */
-   height:50px;
-   float: left;
 }
 #templates>ul{
   display: none;
@@ -201,9 +162,7 @@ ul.hovers{
   padding: 0;
 }
 .content>ul>li>ul.hovers a{
-  //height:auto;
   display: none;
-  //padding: 10px 0 0 10px;
   float: left;
   text-decoration: none;
 }
@@ -216,16 +175,28 @@ ul.hovers{
   display:none;
   height: 400px;
   overflow-y: scroll;
+  border-top:none;
 }
 #targetUniverse table {
   width: 100%;
   border-spacing:0;
 }
+.content ul li table tbody tr th p, .content ul li table tbody tr td p{
+  padding:15px;
+  float: left;
+}
+.content ul li table tbody tr td p{
+  font-weight: 300;
+}
+.content ul li table tbody tr:hover{
+  background:#eaeaea;
+}
 #landingPage{
+  background:white;
   padding:40px;
-  margin-top:-10px;
   display: none;
   border:1px solid #eaeaea;
+  border-top:none;
   clear:both;
 }
 #landingPage div{
@@ -253,13 +224,14 @@ ul.hovers{
 }
 #landingPage .h3{
   font-weight: 300;
+  font-family: "Lato", sans-serif;
   font-size: .8em;
   height:7em;
   padding:10px;
   resize:none;
   outline:none;
 }
-#landingPage div a{
+#landingPage div p{
   display: block;
   padding: 30px 0;
   width: 100%;
@@ -271,25 +243,19 @@ ul.hovers{
   margin-left: -71px;
 }
 #script{
+  background:white;
   clear:both;
-  margin-top:-10px;
   padding:40px;
   border:1px solid #eaeaea;
+  border-top:none;
   display: none;
 }
 #script div input{
   padding:15px;
   border-bottom:2px dashed #eaeaea;
 }
-.content ul li table tbody tr th p, .content ul li table tbody tr td p{
-  padding:15px;
-  float: left;
-}
-.content ul li table tbody tr:hover{
-  background:#eaeaea;
-}
-footer{
-  height:300px;
-  width:100%;
-  float:right;
+footer h1{
+  clear:both;
+  display: block;
+  background: white;
 }

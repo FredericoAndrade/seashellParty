@@ -1,0 +1,33 @@
+#progressContainer{
+  position: fixed;
+  bottom: 0;
+  width: inherit;
+  list-style-type: none;
+  padding:10px;
+  box-sizing:border-box;
+  background: #EEEEEE;
+  box-shadow:0 -2px 4px rgba(0,0,0,.1);
+}
+#progressContainer .tip{
+  padding:10px;
+}
+#progress {
+  margin:10px 0;
+  width: 100%;
+  overflow: auto;
+  background-color: #fafafa;
+}
+#progress > a{
+  float: right;
+  background: white;
+  text-decoration: none;
+  color:black;
+  width: 10%;
+  padding:10px 0 11px 0;
+  text-align: center;
+}
+#progress > div {
+   background-color: #aaa;
+   height:50px;
+   float: left;
+}

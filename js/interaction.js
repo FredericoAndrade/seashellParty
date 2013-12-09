@@ -2,7 +2,7 @@ $(document).ready(
   function(){
     var name = $(".content ul li input"),
     test = ("hi"),
-    progress = $(".content ul li#progress div"),
+    progress = $(".content #progress div"),
     phone = $(".content ul li ul#tool li a.phone"),
     linkUniverse = $(".content ul li.universe ul.hovers li a.link"),
     linkLanding = $(".content ul li.landing ul.hovers li a.link"),
@@ -10,7 +10,66 @@ $(document).ready(
     targetUniverse = $(".content ul li#targetUniverse")
     width = 0,
     progressItem = $(".progressItem").size(),
-    progressIncrement = 90/progressItem
+    progressIncrement = 90/progressItem,
+    newCampaignName = $(".newCampaign").val()
+
+    $(document).on("click",".newCampaign",function(){
+      if($(".content").is(":visible")){
+      } else {
+        $("#emptyContainer").hide()
+        $(this).attr("placeholder","Campaign Name")
+        $(".content").show()
+        var e = ("<input type='text' class='new newCampaign2' placeholder='+ new campaign'>")
+        if(!$(this).val()){
+          $(this).after(e)
+        }
+      }
+    })
+
+    $(document).on("click",".newCampaignIcon",function(){
+        $("#emptyContainer").hide()
+        $(".newCampaign").attr("placeholder","Campaign Name")
+        $(".content").show()
+        var e = ("<input type='text' class='new newCampaign2' placeholder='+ new campaign'>")
+        if(!$(".newCampaign").val()){
+          $(".newCampaign").after(e)
+        }
+    })
+
+    $(document).on("click",".newCampaign2",function(){
+      console.log(test)
+      $(".newCampaignModal").show()
+    })
+
+    $(document).on("blur",".newCampaign",function(){
+      newCampaignName = $(this).val()
+    })
+
+    $(".newCampaign").change(function(){
+      $(".content ul li .progressItem").val($(".newCampaign").val())
+      if ($(progress).hasClass("progress1")){
+      } else {
+        addProgressBar()
+        $(progress).addClass("progress1")
+      }
+      if(!$(name).val()){
+        subtractProgressBar()
+        $(progress).removeClass("progress1")
+      }
+    })
+
+    $(".content ul li .progressItem").change(function(){
+      $(".newCampaign").val($(".content ul li .progressItem").val())
+      if ($(progress).hasClass("progress1")){
+      } else {
+        addProgressBar()
+        $(progress).addClass("progress1")
+      }
+      if(!$(name).val()){
+        subtractProgressBar()
+        $(progress).removeClass("progress1")
+      }
+    })
 
     function addProgressBar () {
       width += progressIncrement
@@ -75,6 +134,8 @@ $(document).ready(
           addProgressBar()
           $(progress).addClass("progress4")
           $("#landingPage").show()
+          $("#landingPage").prev($(".tip")).show()
+          $($("#landingCounter").text(1))
         }
     })
 
@@ -88,6 +149,8 @@ $(document).ready(
           addProgressBar()
           $(progress).addClass("progress4")
           $("#landingPage").show()
+          $("#landingPage").prev($(".tip")).show()
+          $($("#landingCounter").text(1))
         }
       $(this).parent().hide()
     })
@@ -102,6 +165,8 @@ $(document).ready(
           addProgressBar()
           $(progress).addClass("progress5")
           $("#script").show()
+          $("#script").prev($(".tip")).show()
+          $($("#scriptCounter").text(1))
         }
       $(this).parent().hide()
     })
@@ -112,6 +177,8 @@ $(document).ready(
           addProgressBar()
           $(progress).addClass("progress5")
           $("#script").show()
+          $("#script").prev($(".tip")).show()
+          $($("#scriptCounter").text(1))
         }
     })
 
