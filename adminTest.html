@@ -5,16 +5,31 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sprites.css">
     <link rel="stylesheet" href="css/modal.css">
+<<<<<<< HEAD
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/interaction.js"></script>
   </head>
 
+=======
+    <link rel="stylesheet" href="css/sideBar.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/empty.css">
+    <link rel="stylesheet" href="css/progress.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/interaction.js"></script>
+  </head>
+<!-- luster -->
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
   <body>
       <nav>
         <h1><a href="">Greenpeace</a></h1>
         <a href="#" class="profile"></a>
         <ul>
+<<<<<<< HEAD
           <li><a href="#">Goals</a></li>
+=======
+          <li><a href="#">Strategies</a></li>
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
           <li><a href="#">Tools</a></li>
           <li><a href="#">People</a></li>
           <li><a href="#">Reporting</a></li>
@@ -22,15 +37,61 @@
       </nav>
 
       <div class="leftBar">
+<<<<<<< HEAD
 
       </div>
       <div class="content">
         <ul>
           <li><input type="text" class="progressItem" placeholder="Campaign Name"></li>
+=======
+        <ul>
+          <li><a href="#">&#60; Other Strategies</a></li>
+          <li><input type="text" placeholder="Strategy Name" value=""></li>
+          <!-- <li><textarea name="" id="" cols="30" rows="5" placeholder="Goal Description"></textarea></li> -->
+          <!-- <li>
+            <a href="#">Strategies</a>
+            <ul>
+              <li><input type="text" class="new" placeholder="+ new strategy"></li>
+            </ul>
+          </li> -->
+          <li class="subnavHead">Campaigns</li>
+          <li>
+            <ul>
+<!--               <li><a href="#">Save the Whales - USA</a></li>
+              <li><a href="#">Save the Whales - Canada</a></li>
+              <li><a href="#">Save the Whales - Greenland</a></li>
+              <li><a href="#">Save the Whales - Norway</a></li>
+              <li><a href="#">Save the Whales - Japan</a></li> -->
+              <li><input type="text" class="new newCampaign" placeholder="+ new campaign"></li>
+            </ul>
+          </li>
+          <li class="subnavHead">Templates</li>
+          <li>
+            <ul>
+              <li><a href="#">Landing Pages<span id="landingCounter">0</span></a></li>
+              <li><a href="#">Call Scripts<span id="scriptCounter">0</span></a></li>
+              <li><a href="#">Postcards<span id="postcardCounter">0</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="emptyContainer">
+        <div id="empty">
+          <p>You have no campaigns, create one now.</p>
+          <a href="#" class="newCampaignIcon"></a>
+        </div>
+      </div>
+      <div class="content setup">
+        <ul>
+          <li class="tip">Time to get creative! Pick a name for your campaign.</li>
+          <li><input type="text" class="progressItem" placeholder="Campaign Name"></li>
+          <li class="tip">Select the tool you wish to use.</li>
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
           <li>
             <ul id="tool" class="progressItem">
               <li><a href="#" class="phone"></a></li>
               <li><a href="#" class="mail"></a></li>
+<<<<<<< HEAD
               <li><a href="#" class="friend"></a></li>
             </ul>
           </li>
@@ -43,6 +104,15 @@
               <li><a href="#" class="link"></a></li>
               <li><a href="#" class="edit clear"></a></li>
               <li><a href="#" class="share clear"></a></li>
+=======
+              <!-- <li><a href="#" class="friend"></a></li> -->
+            </ul>
+          </li>
+          <li class="tip">Select who your volunteers will target in their efforts.</li>
+          <li class="progressItem universe"><p>Target Universe</p>
+            <ul class="hovers">
+              <li><a href="#" class="link"></a></li>
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
             </ul>
           </li>
           <li id="targetUniverse">
@@ -203,22 +273,37 @@
               </tr>
             </table>
           </li>
+<<<<<<< HEAD
 
+=======
+          <li class="tip">Assign a landing page and supplementary components to your campaign.</li>
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
           <li id="templates"><p>Templates</p>
             <ul>
               <li class="progressItem landing"><p>Landing Page</p>
                 <ul class="hovers">
                   <li><a href="#" class="edit"></a></li>
                   <li><a href="#" class="link"></a></li>
+<<<<<<< HEAD
                   <li><a href="#" class="share clear"></a></li>
                 </ul>
               </li>
+=======
+                </ul>
+              </li>
+              <li class="tip">Direct your volunteers to this campaign through it's own unique landing page.</li>
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
               <li id="landingPage">
                 <div>
                   <input type="text" placeholder="Headline" class="h1">
                   <input type="text" placeholder="Sub-header" class="h2">
+<<<<<<< HEAD
                   <textarea rows="10" cols="50" class="h3">Description</textarea>
                   <a href="#">Login</a>
+=======
+                  <textarea rows="10" cols="50" class="h3" placeholder="Description"></textarea>
+                  <p>Login</p>
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
                 </div>
                 <a href="#">Upload Image</a>
               </li>
@@ -226,9 +311,15 @@
                 <ul class="hovers">
                   <li><a href="#" class="edit"></a></li>
                   <li><a href="#" class="link"></a></li>
+<<<<<<< HEAD
                   <li><a href="#" class="share clear"></a></li>
                 </ul>
             </li>
+=======
+                </ul>
+            </li>
+            <li class="tip">Prepare the script your volunteers will follow when making phone calls.</li>
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
             <li id="script">
               <div>
                 <p>Note: This is the script your volunteers will be using when making calls to prospects.</p>
@@ -240,14 +331,28 @@
             </ul>
           </li>
         </ul>
+<<<<<<< HEAD
+=======
+        <div id="progressContainer">
+          <li id="progress">
+            <div></div>
+            <a href="#" id="launch">Launch</a>
+          </li>
+        </div>
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
       </div>
       <div class="linkModal modal"><a href="#" class="closeModal">x</a><p>You have no lists to choose from. Upload one now. </p> <a href="#" class="upload"></a></div>
       <div class="landingModal modal"><a href="#" class="closeModal">x</a><p>You have no landing pages to choose from. Create one now.</p> <a href="#" class="edit"></a></div>
       <div class="scriptModal modal"><a href="#" class="closeModal">x</a><p>You have no scripts to choose from. Create one now.</p> <a href="#" class="edit"></a></div>
        <div class="missingModal modal"><a href="#" class="closeModal">x</a><p>Please complete all fields.</p></div>
+<<<<<<< HEAD
        <div class="launchModal modal"><a href="#" class="closeModal">x</a><p>Success!</p><a href="#" class="link"></a><p>http://am.us/grpC019D120413</p></div>
 
       <footer></footer>
+=======
+       <div class="newCampaignModal modal"><a href="#" class="closeModal">x</a><p>You've not yet finished setting this campaign up. Would you like to start a new one?</p><a href="#">Yes</a><a href="#" class="closeModal">No</a></div>
+       <div class="launchModal modal"><a href="#" class="closeModal">x</a><p>Success!</p><a href="#" class="link"></a><p>http://am.us/grpC019D120413</p></div>
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
   </body>
 </html>
 

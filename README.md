@@ -1,0 +1,4 @@
+seashellParty
+=============
+
+Enter and die.

@@ -8,9 +8,15 @@
   z-index: 100;
   width: 600px;
   height:300px;
+<<<<<<< HEAD
   background:white;
   border-radius: 3px;
   border:1px solid #ddd;
+=======
+  background:#fff;
+  box-shadow:0 3px 1px #eaeaea;
+  border-radius: 3px;
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
   text-align: center;
 }
 .modal p{
@@ -32,9 +38,17 @@
 }
 .missingModal{
   height:auto;
+<<<<<<< HEAD
 }
 .launchModal.modal>p:last-of-type{
   overflow:auto;
+=======
+
+}
+.launchModal.modal>p:last-of-type{
+  overflow:auto;
+  background-color: white;
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
   border-top:1px solid #eaeaea;
   border-right:1px solid #eaeaea;
   border-bottom:1px solid #eaeaea;
@@ -49,6 +63,10 @@
 .launchModal.modal>a.link{
   width:30px;
   background-position:-50px -195px;
+<<<<<<< HEAD
+=======
+  background-color: white;
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
   position: absolute;
   left: 50%;
   border-top:1px solid #eaeaea;
@@ -59,4 +77,22 @@
   margin-left:-210px;
   padding:5px 5px 6px 15px;
   margin-top:0;
+<<<<<<< HEAD
+=======
+}
+.launchModal.modal>a.link:hover{
+  background-color:#eee;
+}
+.newCampaignModal a:nth-of-type(2){
+position: absolute;
+left: 50%;
+margin-left: -54px;
+margin-top: -5px;
+}
+.newCampaignModal a:nth-of-type(3){
+position: absolute;
+right: 50%;
+margin-right: -54px;
+margin-top: -5px;
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
 }

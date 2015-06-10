@@ -1,5 +1,9 @@
 html, body{
   height:100%;
+<<<<<<< HEAD
+=======
+  clear:both;
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
 }
 body{
   margin:0;
@@ -7,6 +11,10 @@ body{
   font-weight: 300;
   font-size: 1.5em;
   padding-bottom:50px;
+<<<<<<< HEAD
+=======
+  background:#222;
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
 }
 div{
   box-sizing:border-box;
@@ -16,12 +24,17 @@ a{
   color:black;
 }
 a:hover{
+<<<<<<< HEAD
   color:#222EFF;
+=======
+  color:#444;
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
 }
 input:focus::-webkit-input-placeholder
 {
     color: transparent;
 }
+<<<<<<< HEAD
 nav{
   overflow: auto;
   border-bottom:1px solid #000;
@@ -80,12 +93,38 @@ nav ul li a:hover, nav ul li:first-of-type a{
   margin:0;
 }
 .content>ul>li{
+=======
+ul{
+  list-style-type: none;
+}
+.content{
+  background: #eee;
+  display: none;
+  border-left: 1px solid #bbb;
+  float: right;
+  width: 80%;
+  height: inherit;
+  clear:right;
+  padding-bottom:90px;
+}
+.content>ul{
+  padding: 10px;
+  margin: 0;
+  overflow: auto;
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+}
+.content>ul>li{
+  background:white;
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
   min-height: 2em;
   margin-top:10px;
   margin-bottom:10px;
   display: block;
   clear: both;
   border:1px solid #eaeaea;
+<<<<<<< HEAD
 }
 .content ul li#templates>ul>li.progressItem{
   display: block;
@@ -96,6 +135,40 @@ nav ul li a:hover, nav ul li:first-of-type a{
 }
 .content ul li#templates{
   height:2em;
+=======
+  border-radius: 3px
+}
+.content>ul>li.tip{
+background: transparent;
+min-height: inherit;
+margin-top: 20px;
+margin-bottom: 0;
+display: block;
+clear: both;
+border: 1px solid transparent;
+border-radius: 3px;
+padding-left: 20px;
+}
+.content ul li#templates{
+  /*height:2em;*/
+}
+.content ul li#templates>ul>li.progressItem{
+  display: block;
+  background: white;
+  clear: both;
+  border:1px solid #eaeaea;
+  border-top:none;
+  min-height: 2em;
+  padding-left:30px;
+}
+.content ul li#templates>ul>li.tip{
+  display: none;
+  background: white;
+  clear: both;
+  border:1px solid #eaeaea;
+  border-top:none;
+  padding:10px 10px 10px 60px;
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
 }
 .content ul li#templates p span{
   margin-left:10px;
@@ -104,15 +177,19 @@ nav ul li a:hover, nav ul li:first-of-type a{
   top: -2px;
   color:#ddd;
 }
+<<<<<<< HEAD
 /*.content ul li#templates:hover p span{
   color:#aaa;
   transition:all 150ms ease;
 }*/
+=======
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
 .content ul li#templates>ul{
   padding: 0;
   margin-top:15px;
   clear: both;
   overflow: auto;
+<<<<<<< HEAD
 }
 .content ul li#templates>ul>li>ul>li>a{
   display: none;
@@ -120,6 +197,15 @@ nav ul li a:hover, nav ul li:first-of-type a{
   /*height:auto;*/
 }
 .content ul li#templates>ul>li:hover>ul>li>a{
+=======
+  border-top:1px solid #eaeaea;
+}
+.content ul li#templates>ul>li>ul>li>a{
+  display: none;
+}
+.content ul li#templates>ul>li:hover>ul>li>a{
+  overflow: auto;
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
   display: block;
 }
 .content ul li p{
@@ -148,6 +234,7 @@ nav ul li a:hover, nav ul li:first-of-type a{
   float:left;
   width:48px;
 }
+<<<<<<< HEAD
 .content ul li#progress {
   width: 100%;
   overflow: auto;
@@ -167,6 +254,9 @@ nav ul li a:hover, nav ul li:first-of-type a{
   background-color: #eaeaea;
   color:#1A26FF;
 }
+=======
+
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
 ::-webkit-input-placeholder:hover { /* WebKit browsers */
     color:    #1A26FF;
 }
@@ -179,12 +269,15 @@ nav ul li a:hover, nav ul li:first-of-type a{
 :-ms-input-placeholder:hover { /* Internet Explorer 10+ */
     color:    #1A26FF;
 }
+<<<<<<< HEAD
 .content ul li#progress > div {
    background-color: #aaa;
    //width: 10%; /* Adjust with JavaScript */
    height:50px;
    float: left;
 }
+=======
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
 #templates>ul{
   display: none;
 }
@@ -201,9 +294,13 @@ ul.hovers{
   padding: 0;
 }
 .content>ul>li>ul.hovers a{
+<<<<<<< HEAD
   //height:auto;
   display: none;
   //padding: 10px 0 0 10px;
+=======
+  display: none;
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
   float: left;
   text-decoration: none;
 }
@@ -216,16 +313,39 @@ ul.hovers{
   display:none;
   height: 400px;
   overflow-y: scroll;
+<<<<<<< HEAD
+=======
+  border-top:none;
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
 }
 #targetUniverse table {
   width: 100%;
   border-spacing:0;
 }
+<<<<<<< HEAD
 #landingPage{
   padding:40px;
   margin-top:-10px;
   display: none;
   border:1px solid #eaeaea;
+=======
+.content ul li table tbody tr th p, .content ul li table tbody tr td p{
+  padding:15px;
+  float: left;
+}
+.content ul li table tbody tr td p{
+  font-weight: 300;
+}
+.content ul li table tbody tr:hover{
+  background:#eaeaea;
+}
+#landingPage{
+  background:white;
+  padding:40px;
+  display: none;
+  border:1px solid #eaeaea;
+  border-top:none;
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
   clear:both;
 }
 #landingPage div{
@@ -253,13 +373,21 @@ ul.hovers{
 }
 #landingPage .h3{
   font-weight: 300;
+<<<<<<< HEAD
+=======
+  font-family: "Lato", sans-serif;
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
   font-size: .8em;
   height:7em;
   padding:10px;
   resize:none;
   outline:none;
 }
+<<<<<<< HEAD
 #landingPage div a{
+=======
+#landingPage div p{
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
   display: block;
   padding: 30px 0;
   width: 100%;
@@ -271,16 +399,25 @@ ul.hovers{
   margin-left: -71px;
 }
 #script{
+<<<<<<< HEAD
   clear:both;
   margin-top:-10px;
   padding:40px;
   border:1px solid #eaeaea;
+=======
+  background:white;
+  clear:both;
+  padding:40px;
+  border:1px solid #eaeaea;
+  border-top:none;
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
   display: none;
 }
 #script div input{
   padding:15px;
   border-bottom:2px dashed #eaeaea;
 }
+<<<<<<< HEAD
 .content ul li table tbody tr th p, .content ul li table tbody tr td p{
   padding:15px;
   float: left;
@@ -292,4 +429,10 @@ footer{
   height:300px;
   width:100%;
   float:right;
+=======
+footer h1{
+  clear:both;
+  display: block;
+  background: white;
+>>>>>>> 38956da23584576e0bb24713823fd0da64213a5d
 }
